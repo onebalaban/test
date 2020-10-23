@@ -1,4 +1,4 @@
-on: [pull_request]
+on: pull_request_target
 
 jobs:
   hello_world_job:
@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: onebalaban/DependabotHelper
+      uses: onebalaban/DependabotHelper@v1.0
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
